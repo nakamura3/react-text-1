@@ -18,3 +18,9 @@ npx webpack
 ```
 npx webpack-dev-sever
 ```
+
+## CSS スタイルを取り込む
+```
+npm i bootstrap
+npm i -D style-loader css-loader
+```

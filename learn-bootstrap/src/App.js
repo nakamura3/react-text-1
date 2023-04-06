@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, DropdownButton, Dropdown } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   return (
