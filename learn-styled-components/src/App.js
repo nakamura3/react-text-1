@@ -35,6 +35,8 @@ const Message = styled.p`
   }
 `;
 
+const MessageAnchor = Message.withComponent('a');
+
 function App() {
   return (
     <>
@@ -44,6 +46,8 @@ function App() {
       <div><InvertedInput small /></div>
       <Message>Learn Styled Components</Message>
       <Message size="big" >Learn Styled Big Components</Message>
+      <MessageAnchor>Message Anchor</MessageAnchor>
+      <Message size="big" as="a">as polymorphic prop</Message>
     </>
   );
 }
