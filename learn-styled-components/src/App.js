@@ -8,6 +8,11 @@ const Input = styled.input.attrs(props => ({
   background: black;
 `;
 
+const InvertedInput = styled(Input)`
+  color: black;
+  background: white;
+`;
+
 const fontSize = css`
   font-size: ${ props => props.size === 'big' ? '42px' : '24px' };
 `;
@@ -35,6 +40,8 @@ function App() {
     <>
       <div><Input /></div>
       <div><Input small /></div>
+      <div><InvertedInput /></div>
+      <div><InvertedInput small /></div>
       <Message>Learn Styled Components</Message>
       <Message size="big" >Learn Styled Big Components</Message>
     </>
