@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
-const Message = styled.a`
-  font-size: 28px;
+const fontSize = size => ( size === 'big' ? '42px' : '24pg' );
+
+const Message = styled.p`
+  font-size: ${props => fontSize(props.size)};
   background: yellow;
   color: black;
 
@@ -20,7 +22,10 @@ const Message = styled.a`
 
 function App() {
   return (
-    <Message>Learn Styled Components</Message>
+    <>
+      <Message>Learn Styled Components</Message>
+      <Message size="big" >Learn Styled Big Components</Message>
+    </>
   );
 }
 
