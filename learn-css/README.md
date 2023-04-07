@@ -19,6 +19,16 @@ npx webpack-dev-sever
 ## CSS modules
 style-loader, css-loader を使って、css をモジュールとして扱う
 ```
-npm -i -D style-loader css-loader
+npm i -D style-loader css-loader
 npx webpack
 ```
+
+クラス名をローカルスコープ化するには、css-loader の modules オプションを true とし、
+コンポーネント側では className にインポートした css から取得したクラス名を指定する。
+
+## mini-css-extract-plugin
+モジュール化した css 情報を CSS ファイルに抽出分離する。
+```
+npm i -D mini-css-extract-plugin
+```
+
