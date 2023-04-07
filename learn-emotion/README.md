@@ -7,3 +7,5 @@ npx create-react-app learn-emotion
 cd learn-emotion
 npm i @emotion/react
 ```
+
+## Object Style で擬似クラスを使う

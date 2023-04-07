@@ -2,7 +2,7 @@
 import { css } from '@emotion/react';
 
 const App = () => {
-  const pStyle = css`
+  const divStyle = css`
     color: green;
     font-size: 24px;
     &:hover {
@@ -10,10 +10,19 @@ const App = () => {
     }
   `;
 
+  const pStyle = {
+    color: 'orange',
+    fontSize: 32,
+    '&:hover': {
+      color: 'lightgreen'
+    }
+  };
+
   return (
-    <div css={pStyle}>
-      Emotion
-    </div>
+    <>
+      <div css={divStyle}>Emotion</div>
+      <p css={pStyle}>Object Style</p>
+    </>
   );
 }
 export default App;
