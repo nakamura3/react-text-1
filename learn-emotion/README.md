@@ -9,3 +9,5 @@ npm i @emotion/react
 ```
 
 ## Object Style で擬似クラスを使う
+
+## 擬似要素とメディアクエリも使ってみる

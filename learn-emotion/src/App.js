@@ -15,6 +15,12 @@ const App = () => {
     fontSize: 32,
     '&:hover': {
       color: 'lightgreen'
+    },
+    '&::before': {
+      content: "'⬛︎'"
+    },
+    '@media (max-width: 600px)': {
+      background: 'tomato'
     }
   };
 
