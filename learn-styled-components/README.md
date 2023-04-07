@@ -17,3 +17,5 @@ npm i styled-components
 ## 属性指定 (attrs 使用)
 
 ## スタイルの拡張 (Override)
+
+## コンポーネントの切り替え (withComponent, as prop)
