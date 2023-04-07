@@ -1,14 +1,8 @@
 import React from 'react';
-
-const css = {
-  color: 'red',
-  fontSize: 24,
-  width: '100%',
-  border: '1px solid #000'
-};
+import Hello from './hello';
 
 const App = () => (
-  <div style={css} >CSS in JS</div>
+  <Hello />
 );
 
 export default App;

@@ -16,3 +16,9 @@ npx webpack
 npx webpack-dev-sever
 ```
 
+## CSS modules
+style-loader, css-loader を使って、css をモジュールとして扱う
+```
+npm -i -D style-loader css-loader
+npx webpack
+```
