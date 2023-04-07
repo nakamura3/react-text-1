@@ -1,9 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const fontSize = size => ( size === 'big' ? '42px' : '24pg' );
+const fontSize = css`
+  font-size: ${ props => props.size === 'big' ? '42px' : '24px' };
+`;
 
 const Message = styled.p`
-  font-size: ${props => fontSize(props.size)};
+  ${fontSize}
   background: yellow;
   color: black;
 
