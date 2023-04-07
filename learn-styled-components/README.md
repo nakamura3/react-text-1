@@ -13,3 +13,5 @@ npm i styled-components
 ## 関数を使って動的に CSS プロパティ指定
 
 ## 関数を使って動的に CSS プロパティ指定2 ( css タグ使用 )
+
+## 属性指定 (attrs 使用)
